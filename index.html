@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stability Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"IBM Plex Mono"', 'monospace'],
+            },
+            colors: {
+              background: '#111827', // gray-900
+              surface: '#1F2937',    // gray-800
+              border: '#374151',     // gray-700
+              
+              'text-primary': '#F9FAFB', // gray-50
+              'text-secondary': '#9CA3AF',// gray-400
+              
+              'interactive-default': '#3B82F6', // blue-500
+              'interactive-hover': '#2563EB',   // blue-600
+              
+              'positive-default': '#22C55E', // green-500
+              'positive-hover': '#16A34A',   // green-600
+
+              'negative-default': '#EF4444', // red-500
+              'negative-hover': '#DC2626',   // red-600
+
+              'warning-default': '#EAB308',  // yellow-500
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
